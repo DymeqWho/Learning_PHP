@@ -328,6 +328,153 @@ var_dump($zm);
  *             ----------------------
  * 
  */
+ 
+ 
+ echo "OPERATORY";
+ $zmn = 10;
+ $zmn2= 20;
+ echo"<br /> <br />";
+ echo $zmn + $zmn2;
+ echo"<br /> <br />";
+ echo $zmn - $zmn2;
+  echo"<br /> <br />";
+ echo $zmn * $zmn2; 
+   echo"<br /> <br />";
+ echo $zmn / $zmn2; 
+    echo"<br /> <br />";
+ echo 5 % 4;
+    echo"<br /> <br />";
+ echo 5 % 2;   
+    echo"<br /> <br />";
+ echo 2 % 5;   
+    echo"<br /> <br />";
+ echo "Dymitr"."Misiejuk";
+    echo"<br /> <br />";
+    
+    $a = 10;
+    $a += 2; // zamieniam wartość zmiennej $a na $a + 2 cztli w tym wypadku 12 [$a = $a + 2;].
+    echo $a;
+    echo"<br /> <br />";
+    $i = 5;
+    echo ++$i;
+     echo"<br /> <br />";
+    echo $i;
+    echo"<br /> <br />";
+    $i2 = 5;
+    echo $i2++;
+     echo"<br /> <br />";
+     echo $i2;
+    echo"<br /> <br />";
+ 
+ /* OPERATORY
+  *  = jest operatorem PRZYPISANIA. Przypisuje jakąś wartość np:
+  * $zmn = 10;
+  * oznacza, że przypisano $zmn wartość 10.
+  * + jest operatorem dodawania. Może dodawać zmienne, np. $zmn + $zmn2.
+  * - jest operatorem odejmowania. Może odejmować zmienne, np. $zmn + $zmn2.
+  * * jest operatorem mnożenia. Może mnożyć zmienne, np. $zmn + $zmn2.
+  * / jest operatorem dzielenia. Może dzielić zmienne, np. $zmn + $zmn2.
+  * 
+  * % mod czyli modulo - operator reszty z dzielenia i coś jeszcze.
+  * 
+  * . jako operator łączenia stringów.
+  * 
+  * += jako operato doadjący do wartości jakiejść zmiennej coś jeszcze i zastepujący 
+  * tą wartość o + to coś jeszcze.
+  * Można to stosować do wszystkich operatorów matematycznych:
+  * +=
+  * -=
+  * *=
+  * /=
+  * %=
+  * 
+  * Preinkrementacja
+  * ++$i;
+  * Przy wyświetlaniu od razu do zmienne $i powiększy o 1.
+  * 
+  * 
+  * Postinkrementacja
+  * $i++;
+  * 
+  * Przy wyświetlaniu najpierw wyświetli $i zanim powiększy o 1 za nastepnym razem.
+  * 
+  * Analogicznie działa
+  * Predekrementacja
+  * 
+  *--$i;
+  * 
+  * oraz 
+  * 
+  * Postdekrementacja
+  * 
+  * $i--;
+  *
+  * 
+  */
+    echo"<br /> <br />";
+ echo "OPERATORY POROWNANIA inaczej RELACYJNE";
+ $pp = 5;
+ $pp2 = 6;
+ echo"<br /> <br />";
+ echo"<br /> <br />";
+ echo $pp == $pp2;
+ echo"<br /> <br />";
+ var_dump($pp == $pp2);
+ echo"<br /> <br />";
+ var_dump($pp!=$pp2);
+ echo"<br /> <br />";
+ var_dump($pp<>$pp2);
+ 
+ /*OPERATORY POROWNANIA inaczej RELACYJNE
+  * 1 oznacza prawdę (i dowolna inna liczna)
+  * 0 oznacza fałsz (albo NIC, PUSTKA też oznaczają fałsz)
+  * 
+  * == operator porównania. Wyświetli albo 1 albo nic.
+  * 
+  * var_dump();
+  * 
+  * Wyświetli czy prawda czy fałsz opisowo jako bool(fals) albo bool(true).
+  * 
+  * != operator pokazywania czy zmienne są różne.
+  * <> też operator pokazywania czy zmienne są różne.
+  * 
+  * > sprawdza czy operator po lewej od znaku jest większy od tego po prawej.
+  * < sprawdza czy operator po lewej od znaku jest mniejszy od tego po prawej.
+  * >= większe-równe
+  * <=  mniejsze-równe
+  * 
+  * === operator identyczności. Sprawdza czy np. jest identyczny ciag znaków, 
+  * bo coś moze być zapisane jako ciąg znaków np. "5" a coś jako liczba 5.
+  * W tym wypadku "5" nie jest identyczne z 5.
+  * !== sprawdzenie czy nie są identyczne.
+  */
+ echo"<br /> <br />";
+ echo "Zmienne logiczne";
+ echo"<br /> <br />";
+ echo "zajżyj do notatek, bo to zwykła logika formalna";
+ /* and == && -> i czyli koniunkcja
+  * or == ||  -> lub czyli alternatywa 
+  * xor -> albo czyli alternatywa wykluczająca (eXculsive or)
+  * ! -> czyli zaprzeczene, taka logiczna ~
+  * 
+  * 
+  * 
+  * 
+  */
+  echo"<br /> <br />"; echo"<br /> <br />"; echo"<br /> <br />";
+  echo "Operatory bitowe";
+ echo"<br /> <br />";
+ echo 2 & 10; // operator and bitowy czyli że 2 = 0 0 1 0 w zapisie bitowym
+ echo"<br /> <br />";
+ echo 2 | 10; // operator or bitowy
+ echo"<br /> <br />";
+ echo 2 ^ 10; // operator xor bitowy
+ echo"<br /> <br />";
+ echo ~10; // operator not bitowy, zaprzeczenie
+ echo"<br /> <br />";
+ echo 5 >> 2; // operator przesunięcia w prawo bitowy
+ echo"<br /> <br />";
+ echo 5 << 2; // operator przesunięcia w lewo bitowy
 ?>
    </body>
 </html>
